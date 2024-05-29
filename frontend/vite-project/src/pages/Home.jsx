@@ -86,7 +86,7 @@ const Home = () => {
                         placeholder="Search for books"
                         className="p-2 rounded-md text-black w-1/2 border-2 border-black focus:outline-none focus:border-blue-700"
                     />
-                    <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded-md">Search</button>
+                    <button type="submit" className="ml-2 p-2 bg-black text-white rounded-md">Search</button>
                 </form>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                     {displayBooks.map((book) => (
@@ -115,14 +115,14 @@ const Home = () => {
                     <div className="flex justify-center mt-4">
                         <button
                             onClick={handlePreviousPage}
-                            className={`mr-2 p-2 bg-blue-500 text-white rounded-md ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            className={`mr-2 p-2 bg-black text-white rounded-md ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
                             disabled={currentPage === 1}
                         >
                             Previous
                         </button>
                         <button
                             onClick={handleNextPage}
-                            className={`p-2 bg-blue-500 text-white rounded-md ${currentPage * resultsPerPage >= totalResults ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            className={`p-2 bg-black text-white rounded-md ${currentPage * resultsPerPage >= totalResults ? 'opacity-50 cursor-not-allowed' : ''}`}
                             disabled={currentPage * resultsPerPage >= totalResults}
                         >
                             Next

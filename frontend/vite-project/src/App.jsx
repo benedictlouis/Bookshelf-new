@@ -22,8 +22,6 @@ function App() {
   
   return (
     <Router>
-      <Navbar onSearch={handleSearch} />
-
       <div className='grid grid-cols-1 justify-content-center'>
         <div className='flex items-center justify-center'>
           <Routes>

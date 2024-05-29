@@ -34,7 +34,7 @@ function Login() {
                 <CardTitle>Login</CardTitle>
             </CardHeader>
             <CardContent>
-                <form onSubmit={handleSubmit} className="grid w-full gap-4 mt-4">
+                <form onSubmit={handleSubmit} className="grid w-full gap-4 mt-">
                     <div className="flex flex-col items-start space-y-2">
                         <Label htmlFor="username">Username</Label>
                         <Input

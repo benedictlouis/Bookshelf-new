@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:4000"; // Sesuaikan dengan URL server Anda
+const API_URL = "http://localhost:4000"; 
 
 const baseApiResponse = (data, isSuccess) => {
     return {

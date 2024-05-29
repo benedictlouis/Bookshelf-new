@@ -3,7 +3,7 @@ const Book = require('../models/BookModel');
 
 const getBooksFromAPI = async (req, res) => {
     const apiKey = process.env.API_KEY;
-    const url = `https://www.googleapis.com/books/v1/volumes?q=inauthor:Arthur Conan Doyle&key=${apiKey}+&maxResults:40`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=inauthor:Arthur Conan Doyle&key=${apiKey}&maxResults:40`;
 
     try {
         const response = await axios.get(url);
