@@ -7,7 +7,7 @@ const baseApiResponse = (data, isSuccess) => {
     };
 };
 
-const API_URL = "http://localhost:4000"; // Sesuaikan dengan URL server Anda
+const API_URL = "http://localhost:4000";
 
 export const addBook = async (title, author, description, coverImage, releaseYear) => {
     try {

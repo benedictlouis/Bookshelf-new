@@ -3,13 +3,13 @@ const { getBooksFromAPI, getAllBooks, getBookByIdFromDB, deleteBook, deleteAllBo
 
 const router = express.Router();
 
-router.get('/', getBooksFromAPI); // Route to search and add books from Google Books API
-router.get('/getAllBooks', getAllBooks);           // Route to get all books
-router.get('/:id', getBookByIdFromAPI);         // Route to update a book by ID
+router.get('/', getBooksFromAPI);
+router.get('/getAllBooks', getAllBooks);          
+router.get('/:id', getBookByIdFromAPI);         
 router.get("/getBookById/:id", getBookByIdFromDB)
 router.post('/:id', addBookByIdFromAPI);
-router.put('/:id', updateBook);         // Route to update a book by ID
-router.delete('/deleteBook/:id', deleteBook);      // Route to delete a book by ID
+router.put('/:id', updateBook);        
+router.delete('/deleteBook/:id', deleteBook);     
 router.delete('/', deleteAllBooks);   
 
 module.exports = router;

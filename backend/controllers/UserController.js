@@ -1,6 +1,5 @@
 const User = require('../models/UserModel');
 
-// Register new user
 const registerUser = async (req, res) => {
     const { username, email, password } = req.body;
 
@@ -19,7 +18,6 @@ const registerUser = async (req, res) => {
     }
 };
 
-// Login user
 const loginUser = async (req, res) => {
     const { username, password } = req.body;
 
@@ -29,7 +27,6 @@ const loginUser = async (req, res) => {
             return res.status(400).json({ message: 'Invalid username or password' });
         }
 
-        // Membandingkan kata sandi yang dimasukkan pengguna dengan kata sandi yang disimpan di database
         if (password !== user.password) {
             return res.status(400).json({ message: 'Invalid username or password' });
         }

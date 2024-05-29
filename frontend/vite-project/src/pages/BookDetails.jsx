@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getBookById, addBookById } from "../actions/book.action"; // Assuming there's a function for adding book to collection
+import { getBookById, addBookById } from "../actions/book.action"; 
 import Navbar from "../components/ui/navbar";
 import { Button } from "@/components/ui/button";
 
@@ -13,7 +13,7 @@ const BookDetails = () => {
 
     useEffect(() => {
         const fetchBook = async () => {
-            console.log("Fetching book with ID:", id); // Log the ID to ensure it's passed correctly
+            console.log("Fetching book with ID:", id); 
             try {
                 const response = await getBookById(id);
                 if (response.success) {
@@ -33,7 +33,7 @@ const BookDetails = () => {
 
     const handleAddToCollection = async () => {
         try {
-            const response = await addBookById(id); // Assuming this function adds the book to the collection
+            const response = await addBookById(id);
             if (response.success) {
                 navigate("/book_collection");
                 alert("Book added to collection successfully!"); 

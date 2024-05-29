@@ -3,9 +3,9 @@ const { registerUser, loginUser, getUser, getAllUsers } = require('../controller
 
 const router = express.Router();
 
-router.post('/register', registerUser); // Route to register a new user
-router.post('/login', loginUser);       // Route to login a user
-router.get('/:id', getUser);            // Route to get a user by ID
-router.get('/', getAllUsers);           // Route to get all users
+router.post('/register', registerUser); 
+router.post('/login', loginUser);  
+router.get('/:id', getUser);          
+router.get('/', getAllUsers);         
 
 module.exports = router;

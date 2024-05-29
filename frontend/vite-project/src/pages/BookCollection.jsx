@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardTitle, CardDescription } from "../components/ui/card";
 import Navbar from "../components/ui/navbar";
-import { getAllBooks } from '../actions/book.action'; // Adjust the import path as needed
+import { getAllBooks } from '../actions/book.action';
 import { useNavigate } from 'react-router-dom';
 
 const BookCollection = () => {

@@ -22,7 +22,7 @@ function Login() {
         const response = await login(username, password);
         if (response.success) {
             alert('Login berhasil');
-            navigate('/home'); // Navigate to '/home' after successful login
+            navigate('/home'); 
         } else {
             alert(`Error: ${response.data}`);
         }
