@@ -1,6 +1,5 @@
 # Bookshelf
-Bookshelf is a web application that helps you manage your favorite books. With Bookshelf you can add, view, update, and delete books from your personal collection. 
-
+Bookshelf is a web application that utilizes the Google Books API to provide users with access to a vast collection of books. It also includes a feature that allows users to create their own book collections.
 ## Tech Stack
 
 ### Frontend
