@@ -25,7 +25,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-gray-800 p-2 w-full fixed top-0 left-0 z-50 flex items-center justify-between bg-opacity-90">
+        <div className="bg-indigo-950 p-2 w-full fixed top-0 left-0 z-50 flex items-center justify-between">
             <div className="text-lg font-bold text-white ml-4">Bookshelf</div>
             <Menubar>
                 <MenubarMenu>

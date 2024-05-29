@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from './components/ui/navbar';
 import Login from "./pages/Login";
 import Register from './pages/Register';
@@ -22,8 +22,8 @@ function App() {
   
   return (
     <Router>
-      <div className='grid grid-cols-1 justify-content-center'>
-        <div className='flex items-center justify-center'>
+      <div className=''>
+        <div className='flex-grow flex items-center justify-center'>
           <Routes>
             <Route path="/" element={<Navigate to="/login" />} />
             <Route path="/login" element={<Login />} />

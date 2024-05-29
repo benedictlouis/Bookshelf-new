@@ -84,7 +84,7 @@ const Home = () => {
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         placeholder="Search for books"
-                        className="p-2 rounded-md text-black w-1/2 border-2 border-black focus:outline-none focus:border-blue-700"
+                        className="p-2 rounded-md text-black w-1/2 border-2 border-black focus:outline-none focus:border-black"
                     />
                     <button type="submit" className="ml-2 p-2 bg-black text-white rounded-md">Search</button>
                 </form>

@@ -23,7 +23,7 @@ function Register() {
         e.preventDefault();
         const response = await signup(username, email, password);
         if (response.success) {
-            alert('Signup berhasil');
+            Navigate('/login')
         } else {
             alert(`Error: ${response.data}`);
         }

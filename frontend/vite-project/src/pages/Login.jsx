@@ -21,7 +21,6 @@ function Login() {
         e.preventDefault();
         const response = await login(username, password);
         if (response.success) {
-            alert('Login berhasil');
             navigate('/home'); 
         } else {
             alert(`Error: ${response.data}`);
@@ -29,7 +28,7 @@ function Login() {
     };
 
     return (
-        <Card className="w-[350px]">
+        <Card className="w-[350px] mt-12"> 
             <CardHeader>
                 <CardTitle>Login</CardTitle>
             </CardHeader>
