@@ -17,8 +17,11 @@ Bookshelf is a web application that helps you manage your favorite books. With B
 ## Running with Docker Compose
 To run Bookshelf using Docker Compose, follow these steps:
 1. **Clone the Repository**:
+
    ```git clone https://github.com/your/bookshelf.git```
 2. **Navigate to the Project Directory**
+
    ```cd Bookshelf-new```
-4. **Build and run the containers**
+3. **Build and run the containers**
+
    ```docker compose up --build```
