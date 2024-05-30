@@ -37,8 +37,6 @@ const loginUser = async (req, res) => {
     }
 };
 
-
-// Get user by ID
 const getUser = async (req, res) => {
     try {
         const user = await User.findById(req.params.id).select('-password');
@@ -52,7 +50,6 @@ const getUser = async (req, res) => {
     }
 };
 
-// Get all users
 const getAllUsers = async (req, res) => {
     try {
         const users = await User.find().select('-password');

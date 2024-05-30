@@ -40,7 +40,7 @@ const BookCollection = () => {
     return (
         <div>
             <Navbar />
-            <div className="container mx-auto p-4">
+            <div className="container mx-auto p-4 mt-5">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
                     {books.map((book) => (
                         <Card

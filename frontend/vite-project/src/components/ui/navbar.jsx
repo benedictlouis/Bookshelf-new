@@ -34,14 +34,6 @@ const Navbar = () => {
                 <MenubarMenu>
                     <MenubarTrigger className="text-black" onClick={handleBookCollection}>Collection</MenubarTrigger>
                 </MenubarMenu>
-                <MenubarMenu>
-                    <MenubarTrigger className="text-black">Profile</MenubarTrigger>
-                    <MenubarContent>
-                        <MenubarItem onSelect={handleViewProfile}>View Profile</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem onSelect={() => alert('Logout')}>Logout</MenubarItem>
-                    </MenubarContent>
-                </MenubarMenu>
             </Menubar>
         </div>
     );
