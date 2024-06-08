@@ -11,7 +11,7 @@ Bookshelf is a web application that utilizes the Google Books API to provide use
 ### Backend
 - **Node.js**: JavaScript runtime for server-side development.
 - **Express.js**: Web framework for Node.js.
-- **PostgreSQL**: Relational database for storing book data.
+- **MongoDB**: Database for storing book collection.
   
 ## Running with Docker Compose
 To run Bookshelf using Docker Compose, follow these steps:
